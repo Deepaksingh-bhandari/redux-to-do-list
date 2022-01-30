@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { Addtodo } from './MyComponents/Addtodo'
 import { About } from './MyComponents/About'
 import { Alert } from './MyComponents/Alert'
+import { Login } from './MyComponents/login';
 
 import {
   BrowserRouter as Router,
@@ -15,6 +16,7 @@ import {
 } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { actions } from './state/actions/actions';
+import { login } from './MyComponents/login';
 function App() {
 
   // To show alert
@@ -122,6 +124,9 @@ function App() {
             </Route>
             <Route exact path="/about">
               <About />
+            </Route>
+            <Route exact path="/login">
+              <Login />
             </Route>
           </Switch>
         </div>

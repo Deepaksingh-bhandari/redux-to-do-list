@@ -17,9 +17,13 @@ export default function Header(props) {
                             <li className="nav-item mx-3">
                                 <Link className="nav-Link text-decoration-none" to="/" aria-current="page">Home</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-3">
                                 {/* Setting a default value for the paramters as deepak & singh */}
                                 <Link  className="nav-Link text-decoration-none"  to="/about" >About</Link>
+                            </li>
+                            <li className="nav-item mx-3">
+                                {/* Setting a default value for the paramters as deepak & singh */}
+                                <Link  className="nav-Link text-decoration-none"  to="/login" >Login</Link>
                             </li>
                         </ul>
                         {!props.searchBar ? <form className="d-flex">
